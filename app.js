@@ -8,10 +8,6 @@ const dashboardRoutes = require("./src/presentation/routes/dashboardRoutes")
 const app = express()
 
 
-// ** Add Body Parsing Middleware **
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
-
 // Set view engine & views path using .env settings
 app.set("view engine", process.env.VIEW_ENGINE || "ejs")
 app.set("views", path.join(__dirname, process.env.VIEWS_DIR || "src/presentation/views"))
