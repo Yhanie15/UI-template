@@ -1,0 +1,20 @@
+<nav id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <div class="logo-container">
+      <a href="/" class="logo">
+        <div class="logo-wrapper">
+          <img src="/images/logo.png" alt="ilo" class="logo-img">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <ul class="list-unstyled sidebar-menu">
+    <li class="sidebar-item <%= currentPage === 'dashboard' ? 'active' : '' %>">
+      <a href="/" class="sidebar-link" data-tooltip="Dashboard">
+        <i class="bi bi-grid-1x2-fill"></i>
+        <span class="menu-text">Dashboard</span>
+      </a>
+    </li>
+  </ul>
+</nav>
